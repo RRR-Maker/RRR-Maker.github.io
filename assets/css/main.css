@@ -4696,3 +4696,10 @@ input, select, textarea {
 }
 .left {
 }
+/* citeation */
+.citation-url {
+  word-break: break-all;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
