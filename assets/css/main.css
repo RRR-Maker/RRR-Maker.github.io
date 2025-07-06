@@ -4696,10 +4696,64 @@ input, select, textarea {
 }
 .left {
 }
+
 /* citeation */
 .citation-url {
   word-break: break-all;
   overflow-wrap: break-word;
   white-space: normal;
 }
+
+/* button to top */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  z-index: 10001;
+  border: 0;
+  outline: none;
+  background-color: #1976d2; /* or #212931, #f5f7fa, #4285f4, #6c757d */
+  color: #fff; /* or #212931 if using a very light background */
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  letter-spacing: 0.075em;
+  padding: 0.375rem 1.25rem;
+  border-radius: 2rem;
+  box-shadow: 0 0.125rem 0.75rem 0 rgba(30, 37, 45, 0.25);
+  text-transform: uppercase;
+  cursor: pointer;
+  -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+	
+/* Add these for centering */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#myBtn:hover,
+#myBtn:focus {
+  background-color: #212931; /* #1976d2; Blue accent on hover, like your site links/buttons */
+  color: #ffffff;
+  box-shadow: 0 0.25rem 1rem 0 rgba(30, 37, 45, 0.35);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 736px) {
+  #myBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1em;
+    padding: 0;
+    border-radius: 50%;
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
+}
+
+
 

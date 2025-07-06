@@ -254,5 +254,19 @@
 			});
 
 		}
+  // Scroll to Top Button 
+	var $mybutton = $('#myBtn');
 
+  $(window).on('scroll', function() {
+    if ($(window).scrollTop() > 20) {
+      $mybutton.fadeIn();
+    } else {
+      $mybutton.fadeOut();
+    }
+  });
+
+  window.topFunction = function() {
+    $('html, body').animate({scrollTop: 0}, 600);
+  };
+	
 })(jQuery);
