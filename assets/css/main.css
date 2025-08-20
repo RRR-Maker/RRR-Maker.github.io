@@ -3694,7 +3694,12 @@ input, select, textarea {
 			-moz-flex-shrink: 1;
 			-webkit-flex-shrink: 1;
 			-ms-flex-shrink: 1;
-			flex-shrink: 1;
+			flex-shrink: 1; 
+			/*Originally
+			-moz-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			flex-shrink: 1;*/
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
 			font-weight: 900;
 			letter-spacing: 0.075em;
@@ -3707,6 +3712,10 @@ input, select, textarea {
 			#nav ul.links li {
 				display: block;
 				padding-left: 0;
+				flex-shrink: 0; /* this is added to prevent text truncation and prevent unwanted shrinking:*/
+				/* flex: 0 1 auto;or 
+    			
+    			/* min-width: max-content; */
 			}
 
 				#nav ul.links li a {
