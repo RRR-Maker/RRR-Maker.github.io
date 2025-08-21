@@ -4714,7 +4714,7 @@ input, select, textarea {
   display: none;
   position: fixed;
   bottom: 0.75rem;
-  right: 0.75rem;
+  right: 2.0rem;  /*adjust this, 0.75rem*/
   z-index: 10001;
   border: 0;
   outline: none;
