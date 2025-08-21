@@ -1055,7 +1055,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) { /*980*/
 
 			.row {
 				display: flex;
@@ -2163,7 +2163,7 @@ input, select, textarea {
 			padding: 0 2.75rem;
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) { /*980*/
 
 			input[type="submit"],
 			input[type="reset"],
@@ -2322,7 +2322,7 @@ input, select, textarea {
 		margin: 0 0 0.75rem 0;
 	}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) { /*980*/
 
 			label {
 				font-size: 0.9rem;
@@ -2982,7 +2982,7 @@ input, select, textarea {
 					right: 0;
 				}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) { /*980*/
 
 			header br {
 				display: none;
@@ -3035,7 +3035,7 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 
-			@media screen and (max-width: 980px) {
+			@media screen and (max-width: 980px) { /*980*/
 
 				table th {
 					font-size: 0.9rem;
@@ -3174,7 +3174,7 @@ input, select, textarea {
 			margin-left: 0.9375em;
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) { /*980*/
 
 			.pagination a, .pagination span {
 				font-size: 0.9rem;
@@ -3452,7 +3452,7 @@ input, select, textarea {
 				opacity: 0;
 			}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) { /*980*/
 
 			#intro {
 				padding: 4rem 4rem 2rem 4rem ;
@@ -3584,7 +3584,7 @@ input, select, textarea {
 				color: #1ec16d !important;
 			}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) { /*980*/
 
 			#header {
 				height: 14rem;
@@ -3607,6 +3607,7 @@ input, select, textarea {
 		}
 
 /* Nav */
+/*this controls the navigation tabs*/
 
 	#nav {
 		color: #ffffff;
@@ -3712,10 +3713,9 @@ input, select, textarea {
 			#nav ul.links li {
 				display: block;
 				padding-left: 0;
-				flex-shrink: 0; /* this is added to prevent text truncation and prevent unwanted shrinking:*/
-				/* flex: 0 1 auto;or 
-    			
-    			/* min-width: max-content; */
+				/* flex-shrink: 0;  this is added to prevent text truncation and prevent unwanted shrinking: 
+				flex: 0 1 auto;		*/
+    			min-width: max-content;
 			}
 
 				#nav ul.links li a {
@@ -3727,16 +3727,18 @@ input, select, textarea {
 					font-size: 0.8rem;
 					outline: none;
 					padding: 0 2rem;
+					/* min-width: max-content;  added */
+					/* white-space: nowrap;  Prevent word break */
 				}
 
 					#nav ul.links li a:hover {
 						color: inherit !important;
-/*Originally white opacity 0.1*/
+/*Originally white opacity 0.1, last set of number below*/
 						background-color: rgba(30, 193, 109, 0.2);
 					}
 
 				#nav ul.links li.active {
-					background-color: #ffffff;
+					background-color: #ffffff; /*#ffffff*/
 				}
 
 					#nav ul.links li.active a {
@@ -3759,7 +3761,7 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) { /* 980*/
 
 			#nav {
 				display: none;
@@ -3810,7 +3812,7 @@ input, select, textarea {
 				text-align: center;
 			}
 
-			@media screen and (max-width: 1280px) {
+			@media screen and (max-width: 1280px) { 
 
 				#main > .post {
 					padding: 6rem 4rem 4rem 4rem ;
@@ -3895,7 +3897,7 @@ input, select, textarea {
 					border-top-width: 0;
 				}
 
-			@media screen and (max-width: 980px) {
+			@media screen and (max-width: 980px) { /*980*/
 
 				#main > .posts > * {
 					width: 50%;
@@ -4310,7 +4312,7 @@ input, select, textarea {
 			font-size: 0.8rem;
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) { /*980*/
 
 			#footer {
 				display: block;
@@ -4499,7 +4501,9 @@ input, select, textarea {
 
 /* Nav Panel */
 
+
 	#navPanelToggle {
+		/*this is the menu button that shows up on the right*/
 		text-decoration: none;
 		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -4509,12 +4513,12 @@ input, select, textarea {
 		position: fixed;
 		top: 0.75rem;
 		right: 0.75rem;
-		border: 0;
-		color: #ffffff;
+		border: 1;
+		color: #000000; /*#ffffff; this changes the original type colour for menu button*/
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 0.9rem;
-		font-weight: 900;
-		letter-spacing: 0.075em;
+		font-weight: 500; /**/
+		letter-spacing: 0.075em; /*0.075em;*/
 		padding: 0.375rem 1.25rem;
 		text-transform: uppercase;
 		z-index: 10001;
@@ -4534,7 +4538,7 @@ input, select, textarea {
 		}
 
 		#navPanelToggle:before {
-			content: '\f0c9';
+			content: '\f0c9'; /*'\f0c9' three bars*/
 			margin-right: 0.5rem;
 		}
 
@@ -4546,18 +4550,17 @@ input, select, textarea {
 		}
 
 			#navPanelToggle.alt:hover {
-				background-color: #ffffff;
+				background-color: #ffffff; /*#ffffff this changes the background colour of the menu button when scrolled*/
 			}
 
-		@media screen and (max-width: 980px) {
-
+		@media screen and (max-width: 980px) { /*changed this from 980.  this enables the button to show up as the nav tab reaches its limit*/
 			#navPanelToggle {
 				display: block;
 			}
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 736px) { /*736*/
 
 			#navPanelToggle {
 				font-size: 0.8rem;
@@ -4567,6 +4570,7 @@ input, select, textarea {
 		}
 
 	#navPanel {
+		/*this is the menu list that slides in from the right*/
 		-moz-transform: translateX(20rem);
 		-webkit-transform: translateX(20rem);
 		-ms-transform: translateX(20rem);
@@ -4577,7 +4581,7 @@ input, select, textarea {
 		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		display: none;
 		-webkit-overflow-scrolling: touch;
-		background: #ffffff;
+		background: #ffffff; 
 		box-shadow: none;
 		color: #212931;
 		height: 100%;
@@ -4661,7 +4665,7 @@ input, select, textarea {
 				color: #212931;
 			}
 
-			@media screen and (max-width: 736px) {
+			@media screen and (max-width: 736px) { /*736*/
 
 				#navPanel .close {
 					height: 4rem;
@@ -4670,7 +4674,7 @@ input, select, textarea {
 
 			}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) { /*980 this has to match with navPanelToggle*/
 
 			#navPanel {
 				display: block;
@@ -4678,7 +4682,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 736px) { /*736*/
 
 			#navPanel {
 				padding: 2.5rem 1.75rem;
@@ -4686,10 +4690,10 @@ input, select, textarea {
 
 		}
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 980px) { /*changed this from 980 this enables the menu nav to slide in */
 
 		body.is-navPanel-visible #wrapper {
-			opacity: 0.5;
+			opacity: 0.5; /**/
 		}
 
 		body.is-navPanel-visible #navPanel {
