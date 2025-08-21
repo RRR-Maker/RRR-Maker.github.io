@@ -18,8 +18,10 @@
 		breakpoints({
 			default:   ['1681px',   null       ],
 			xlarge:    ['1281px',   '1680px'   ],
-			large:     ['981px',    '1280px'   ],
-			medium:    ['737px',    '980px'    ],
+			large:     ['1101px',    '1280px'  ],  	/*originally, large:     ['981px',    '1280px'   ],*/
+													/*changed from 981px to 1101px to push panel trigger up*/
+			medium:    ['737px',    '1100px'   ],	/*originally, medium:    ['737px',    '980px'    ],*/
+													/* Adjust medium to max 1100px */
 			small:     ['481px',    '736px'    ],
 			xsmall:    ['361px',    '480px'    ],
 			xxsmall:   [null,       '360px'    ]
